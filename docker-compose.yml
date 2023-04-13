@@ -5,7 +5,7 @@ services:
     container_name: c_api_gateway
     image: kivancaksoy/apigateway
     build:
-      context: .
+      context: ./
       dockerfile: APIgateway/Dockerfile
     ports:
       - 80:80
@@ -17,7 +17,7 @@ services:
     container_name: c_contact_api
     image: kivancaksoy/contactapi
     build:
-      context: .
+      context: ./
       dockerfile: Services/ContactAPI/Contact.API/Dockerfile
     ports:
       - 9000:9000
@@ -28,7 +28,7 @@ services:
     container_name: c_res_api
     image: kivancaksoy/resapi
     build:
-      context: .
+      context: ./
       dockerfile: Services/ResAPI/Reservation.API/Dockerfile
     ports:
       - 7000:7000
