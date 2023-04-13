@@ -2,7 +2,7 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/res/{bkgNumber}", //upstreamdeki pathe gelenleri hangi adrese yönlendireyim.
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "c_res_api",
@@ -14,7 +14,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/contact/{id}", //upstreamdeki pathe gelenleri hangi adrese yönlendireyim.
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "c_contact_api",
