@@ -6,7 +6,7 @@ services:
     image: kivancaksoy/apigateway
     build:
       context: ./
-      dockerfile: APIgateway/Dockerfile
+      dockerfile: APIGateway/Dockerfile
     ports:
       - 80:80
     networks:
