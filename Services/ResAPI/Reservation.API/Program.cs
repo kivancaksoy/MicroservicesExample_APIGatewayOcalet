@@ -21,6 +21,8 @@ namespace Reservation.API
 
             var app = builder.Build();
 
+            builder.WebHost.UseUrls("http://*:7000");
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

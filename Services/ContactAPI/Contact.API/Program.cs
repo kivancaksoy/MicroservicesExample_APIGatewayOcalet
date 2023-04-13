@@ -22,7 +22,7 @@ namespace Contact.API
             var app = builder.Build();
 
             //uygulamayý 9000'den çalýþtýrdýk. launch settingsden de düzeltilebilir. Burasý launch settingsin üzerine yazar.
-            //builder.WebHost.UseUrls("http://*:9000");
+            builder.WebHost.UseUrls("http://*:9000");
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
